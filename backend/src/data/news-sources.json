@@ -1,0 +1,34 @@
+{
+  "_comment": "Per-jurisdiction allowlists of reputable journalism sources. Used by NewsCorroborator to constrain Firecrawl search. Add to these as coverage expands. Federal sources are always included for federal-scope issues.",
+  "philly": [
+    "inquirer.com",
+    "billypenn.com",
+    "whyy.org",
+    "plansphilly.com",
+    "axios.com",
+    "phillymag.com"
+  ],
+  "pennsylvania": [
+    "spotlightpa.org",
+    "pennlive.com",
+    "wesa.fm",
+    "witf.org",
+    "inquirer.com"
+  ],
+  "federal": [
+    "apnews.com",
+    "reuters.com",
+    "propublica.org",
+    "nytimes.com",
+    "washingtonpost.com",
+    "politico.com",
+    "npr.org",
+    "rollcall.com"
+  ],
+  "civic_specialty": [
+    "routefifty.com",
+    "governing.com",
+    "bloomberg.com",
+    "smartcitiesdive.com"
+  ]
+}

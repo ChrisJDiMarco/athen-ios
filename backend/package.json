@@ -1,0 +1,36 @@
+{
+  "name": "civic-os-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Athen backend — verify address, resolve official, draft message, file via email.",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "fetch:districts": "tsx scripts/fetchDistricts.ts",
+    "fetch:congress": "tsx scripts/fetchCongress.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.1",
+    "@turf/boolean-point-in-polygon": "^7.1.0",
+    "@turf/helpers": "^7.1.0",
+    "@types/js-yaml": "^4.0.9",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "js-yaml": "^4.1.1",
+    "postmark": "^4.0.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.14",
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

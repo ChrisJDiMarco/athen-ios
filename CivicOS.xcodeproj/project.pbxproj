@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B533A58B955373CB92F3689 /* CivicSourceDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8446DA3938284A6B2A2C4E6 /* CivicSourceDescriptor.swift */; };
+		0DA4A3EB4C6ECA1978B11540 /* WhatChangedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5DCEC3B8FE50B8D319EBCD /* WhatChangedCard.swift */; };
+		0E8E2B19A21C63FE796B47B9 /* CivicDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA77DF8CFFF935F650E21341 /* CivicDiff.swift */; };
+		1121FD4A0ECD40868455291E /* DraftVariantsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8DCCCE75B913C22BAB15B8 /* DraftVariantsService.swift */; };
+		12C85CD90479F649D95F6388 /* AmbientBriefingMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6FF57A549F83F0EF98A60B /* AmbientBriefingMonitor.swift */; };
+		1371DBA47B5A7D042E16A21D /* CivicNotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8F6043CDB245BF4378BDEB /* CivicNotificationScheduler.swift */; };
+		17130BA9C1712A18EF1628BD /* BallotScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37533E5E6C6F5FE7088FEA9B /* BallotScannerView.swift */; };
+		1A1A0BD1238DC40329EDD74D /* BallotAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73963F1F84AAA5640D83C761 /* BallotAnalysis.swift */; };
+		20EBCCFB71EE243393550419 /* BriefDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4EC40FD82B66A0C291372D /* BriefDetailView.swift */; };
+		240A8BFC2471DA3AD1A50927 /* BackendOfflineBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86269FB990C83B2F4D7FBFBD /* BackendOfflineBanner.swift */; };
+		28DF9F42BA293B05F217B4A1 /* LifeEventComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7EB0415A3CC7F20AD91D35 /* LifeEventComposerView.swift */; };
+		2A343243CA2DC0A19BCE503B /* OfficialsDirectoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9BB795F668F47D0EEBD67 /* OfficialsDirectoryService.swift */; };
+		2A652F287DC29825D61A218D /* RefreshService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7913EC2F729F98C095DF03F /* RefreshService.swift */; };
+		368470911A6547D859A80CED /* PetitionComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BC25BBC88B95AF726728E /* PetitionComposerView.swift */; };
+		3A6F00112CEB400100C1C0DE /* CivicOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00012CEB400100C1C0DE /* CivicOSApp.swift */; };
+		3A6F00122CEB400100C1C0DE /* CivicOSStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00022CEB400100C1C0DE /* CivicOSStore.swift */; };
+		3A6F00132CEB400100C1C0DE /* CivicAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00032CEB400100C1C0DE /* CivicAction.swift */; };
+		3A6F00142CEB400100C1C0DE /* CivicIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00042CEB400100C1C0DE /* CivicIssue.swift */; };
+		3A6F00152CEB400100C1C0DE /* MockCivicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00052CEB400100C1C0DE /* MockCivicData.swift */; };
+		3A6F00162CEB400100C1C0DE /* CivicFilingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00062CEB400100C1C0DE /* CivicFilingService.swift */; };
+		3A6F00172CEB400100C1C0DE /* CivicTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00072CEB400100C1C0DE /* CivicTheme.swift */; };
+		3A6F00182CEB400100C1C0DE /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00082CEB400100C1C0DE /* DashboardView.swift */; };
+		3A6F00192CEB400100C1C0DE /* IssueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00092CEB400100C1C0DE /* IssueDetailView.swift */; };
+		3A6F001A2CEB400100C1C0DE /* CivicGlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F000A2CEB400100C1C0DE /* CivicGlassCard.swift */; };
+		3A6F001B2CEB400100C1C0DE /* ImpactCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F000B2CEB400100C1C0DE /* ImpactCardView.swift */; };
+		3A6F001C2CEB400100C1C0DE /* TranslationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F000C2CEB400100C1C0DE /* TranslationCardView.swift */; };
+		3A6F001D2CEB400100C1C0DE /* ActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F000D2CEB400100C1C0DE /* ActionBarView.swift */; };
+		3A6F001E2CEB400100C1C0DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F000E2CEB400100C1C0DE /* Assets.xcassets */; };
+		3A6F00512CEB400100C1C0DE /* HTTPCivicFilingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00502CEB400100C1C0DE /* HTTPCivicFilingService.swift */; };
+		3A6F00612CEB400100C1C0DE /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00602CEB400100C1C0DE /* UserProfile.swift */; };
+		3A6F00632CEB400100C1C0DE /* ProfileResolverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00622CEB400100C1C0DE /* ProfileResolverService.swift */; };
+		3A6F00652CEB400100C1C0DE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00642CEB400100C1C0DE /* MainTabView.swift */; };
+		3A6F00672CEB400100C1C0DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00662CEB400100C1C0DE /* HomeView.swift */; };
+		3A6F00692CEB400100C1C0DE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00682CEB400100C1C0DE /* ProfileView.swift */; };
+		3A6F00712CEB400100C1C0DE /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00702CEB400100C1C0DE /* ChatMessage.swift */; };
+		3A6F00732CEB400100C1C0DE /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00722CEB400100C1C0DE /* ChatService.swift */; };
+		3A6F00752CEB400100C1C0DE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00742CEB400100C1C0DE /* ChatView.swift */; };
+		3A6F00812CEB400100C1C0DE /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00802CEB400100C1C0DE /* Topic.swift */; };
+		3A6F00832CEB400100C1C0DE /* OutreachGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00822CEB400100C1C0DE /* OutreachGroup.swift */; };
+		3A6F00852CEB400100C1C0DE /* TopicsPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00842CEB400100C1C0DE /* TopicsPickerSheet.swift */; };
+		3A6F00872CEB400100C1C0DE /* GroupsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00862CEB400100C1C0DE /* GroupsListView.swift */; };
+		3A6F00892CEB400100C1C0DE /* GroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00882CEB400100C1C0DE /* GroupDetailView.swift */; };
+		3A6F008B2CEB400100C1C0DE /* ShareReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F008A2CEB400100C1C0DE /* ShareReceiptView.swift */; };
+		3A6F00912CEB400100C1C0DE /* BackgroundCitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00902CEB400100C1C0DE /* BackgroundCitation.swift */; };
+		3A6F00932CEB400100C1C0DE /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00922CEB400100C1C0DE /* NewsService.swift */; };
+		3A6F00A12CEB400100C1C0DE /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00A02CEB400100C1C0DE /* AppSettings.swift */; };
+		3A6F00A32CEB400100C1C0DE /* IssueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00A22CEB400100C1C0DE /* IssueService.swift */; };
+		3A6F00B12CEB400100C1C0DE /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00B02CEB400100C1C0DE /* Haptics.swift */; };
+		3A6F00B32CEB400100C1C0DE /* DraftFilingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00B22CEB400100C1C0DE /* DraftFilingSheet.swift */; };
+		3A6F00B52CEB400100C1C0DE /* FilingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00B42CEB400100C1C0DE /* FilingHistoryView.swift */; };
+		3A6F00B72CEB400100C1C0DE /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00B62CEB400100C1C0DE /* BookmarksView.swift */; };
+		3A6F00B92CEB400100C1C0DE /* SafariSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00B82CEB400100C1C0DE /* SafariSheet.swift */; };
+		3A6F00C12CEB400100C1C0DE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00C02CEB400100C1C0DE /* OnboardingView.swift */; };
+		3A6F00C32CEB400100C1C0DE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00C22CEB400100C1C0DE /* AboutView.swift */; };
+		3A6F00D12CEB400100C1C0DE /* CivicRadar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00D02CEB400100C1C0DE /* CivicRadar.swift */; };
+		3A6F00D32CEB400100C1C0DE /* CivicRadarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00D22CEB400100C1C0DE /* CivicRadarViews.swift */; };
+		3A6F00D52CEB400100C1C0DE /* CivicActionFlowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00D42CEB400100C1C0DE /* CivicActionFlowViews.swift */; };
+		3A6F00E12CEB400100C1C0DE /* SocialPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00E02CEB400100C1C0DE /* SocialPost.swift */; };
+		3A6F00E32CEB400100C1C0DE /* SocialFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00E22CEB400100C1C0DE /* SocialFeedView.swift */; };
+		3A6F00F12CEB400100C1C0DE /* CivicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00F02CEB400100C1C0DE /* CivicService.swift */; };
+		3A6F00F32CEB400100C1C0DE /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F00F22CEB400100C1C0DE /* HelpView.swift */; };
+		3A6F01012CEB400100C1C0DE /* VoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F01002CEB400100C1C0DE /* VoiceService.swift */; };
+		3A6F01032CEB400100C1C0DE /* VoiceAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6F01022CEB400100C1C0DE /* VoiceAssistantView.swift */; };
+		3BF65A42170AB1DFFE0EAF0A /* LifeEventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003B4C96684CF7FA4D34DD18 /* LifeEventsService.swift */; };
+		3E6CFEEE1ECCD12417B49253 /* HomePulseStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05262FECDC749CDF0B663C24 /* HomePulseStrip.swift */; };
+		48DD46B8516FCF190C8729CB /* SourcesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC883F1818F8AF5ABEAF25 /* SourcesService.swift */; };
+		48F5D8CEBB616D447B52C684 /* VoterRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16C470F02F02D1C39482651 /* VoterRegistrationView.swift */; };
+		49CA0E7927D1548EDDD84D5D /* BallotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C007F304ECF8A61C67003CB7 /* BallotService.swift */; };
+		4A7188D3B6BDA2AF664359ED /* VoterHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B256B5D72065606F74AD8 /* VoterHubView.swift */; };
+		4B01F282A1CBD7B5D6CC14FD /* ConnectionsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F442399DE2590EAFC2D8F9B /* ConnectionsPanelView.swift */; };
+		4DB3198F3F282FA42870AFF4 /* PetitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258FE47BD61038C604E8DA6 /* PetitionsView.swift */; };
+		514BCB9EDA3616CFF34390D7 /* BriefService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C78EB0BFD6262F696D376B /* BriefService.swift */; };
+		535F47FFA17F5CFFA8FDE303 /* DirectoryOfficial.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC50782CEACEDCAF07AFBBD8 /* DirectoryOfficial.swift */; };
+		53738931E2BF5DAAE9E21F05 /* VoterRailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7BF258745542C85BAB8E36 /* VoterRailService.swift */; };
+		5844C728D012220ED77C80F5 /* PostThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29CD0DE2874CDFD32633A51 /* PostThreadView.swift */; };
+		5BCC83C39451EEF461941E65 /* CivicComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC69A0A0622E0FC55FFDF4 /* CivicComment.swift */; };
+		5C6EE7925E3A760D0FFBF3C7 /* CivicVoterRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35CAA1B54B8909AF07D7AFF /* CivicVoterRail.swift */; };
+		5C88D2B48DC8FB0E70CACCE9 /* OfficialDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDBC6AFD9ED691F18A1168B /* OfficialDetailView.swift */; };
+		62CD2E96B231F396F989C4E8 /* SampleBallotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF89372F584CADE0D4D3990 /* SampleBallotView.swift */; };
+		6348C82BB25B7D3A101B3D95 /* PetitionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF56093083B2ECAE8284F8 /* PetitionsService.swift */; };
+		6836177856245A7F35586899 /* CivicBriefAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8A9C49985DA98B9C2DEF6A /* CivicBriefAnalysis.swift */; };
+		6CE250B0D94998085AC72672 /* CivicIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CCAD4845937AF0B206BDB9 /* CivicIntegration.swift */; };
+		756D051799704A3610FEFDB8 /* GroupLetterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB73605DEFDA0F217A464F15 /* GroupLetterSheet.swift */; };
+		8C1A2B3C4D5E6F7081920304 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920305 /* SpeechService.swift */; };
+		8C1A2B3C4D5E6F7081920306 /* ReadAloudButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920307 /* ReadAloudButton.swift */; };
+		8C1A2B3C4D5E6F7081920308 /* AthenURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920309 /* AthenURLSession.swift */; };
+		8C1A2B3C4D5E6F708192030A /* ReportPostSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192030B /* ReportPostSheet.swift */; };
+		8C1A2B3C4D5E6F708192030C /* BlockedAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192030D /* BlockedAccountsView.swift */; };
+		8C1A2B3C4D5E6F708192030E /* ModerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192030F /* ModerationService.swift */; };
+		8C1A2B3C4D5E6F7081920310 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920311 /* ImageCache.swift */; };
+		8C1A2B3C4D5E6F7081920312 /* AIDisclosureChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920313 /* AIDisclosureChip.swift */; };
+		8C1A2B3C4D5E6F7081920314 /* BillCompareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920315 /* BillCompareSheet.swift */; };
+		8C1A2B3C4D5E6F7081920316 /* GlobalSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920317 /* GlobalSearchBar.swift */; };
+		8C1A2B3C4D5E6F7081920318 /* QuotaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920319 /* QuotaService.swift */; };
+		8C1A2B3C4D5E6F708192031A /* AIQuotaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192031B /* AIQuotaCard.swift */; };
+		8C1A2B3C4D5E6F708192031C /* AthenInboxNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192031D /* AthenInboxNotification.swift */; };
+		8C1A2B3C4D5E6F708192031E /* NotificationsInboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192031F /* NotificationsInboxView.swift */; };
+		8C1A2B3C4D5E6F7081920320 /* ActivityTickerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920321 /* ActivityTickerCard.swift */; };
+		8C1A2B3C4D5E6F7081920322 /* SquareComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920323 /* SquareComponents.swift */; };
+		8C1A2B3C4D5E6F7081920324 /* RefreshStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920325 /* RefreshStreamService.swift */; };
+		8C1A2B3C4D5E6F7081920326 /* RefreshProgressDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920327 /* RefreshProgressDrawer.swift */; };
+		8C1A2B3C4D5E6F7081920328 /* HeadlineNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920329 /* HeadlineNewsService.swift */; };
+		8C1A2B3C4D5E6F708192032A /* NewsHeadlineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192032B /* NewsHeadlineCard.swift */; };
+		8C1A2B3C4D5E6F708192032C /* ActTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192032D /* ActTabView.swift */; };
+		8C1A2B3C4D5E6F708192032E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192032F /* PrivacyInfo.xcprivacy */; };
+		8C1A2B3C4D5E6F7081920330 /* CivicSavedSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920331 /* CivicSavedSearch.swift */; };
+		8C1A2B3C4D5E6F7081920332 /* CivicTimelineEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920333 /* CivicTimelineEvent.swift */; };
+		8C1A2B3C4D5E6F7081920334 /* SavedSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920335 /* SavedSearchService.swift */; };
+		8C1A2B3C4D5E6F7081920336 /* TimelineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920337 /* TimelineService.swift */; };
+		8C1A2B3C4D5E6F7081920338 /* SavedSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920339 /* SavedSearchesView.swift */; };
+		8C1A2B3C4D5E6F708192033A /* BillTimelineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192033B /* BillTimelineCard.swift */; };
+		8C1A2B3C4D5E6F708192033C /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192033D /* ShareSheet.swift */; };
+		8C1A2B3C4D5E6F708192033E /* CivicUrlAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192033F /* CivicUrlAnalysis.swift */; };
+		8C1A2B3C4D5E6F7081920340 /* MagicalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920341 /* MagicalServices.swift */; };
+		8C1A2B3C4D5E6F7081920342 /* PredictiveNudgeScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920343 /* PredictiveNudgeScheduler.swift */; };
+		8C1A2B3C4D5E6F7081920344 /* UrlAnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920345 /* UrlAnalyzeView.swift */; };
+		8C1A2B3C4D5E6F7081920346 /* PersonalImpactSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920347 /* PersonalImpactSheet.swift */; };
+		8C1A2B3C4D5E6F7081920348 /* HomeNewsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F7081920349 /* HomeNewsCache.swift */; };
+		8C1A2B3C4D5E6F708192034A /* IssueFilingTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192034B /* IssueFilingTally.swift */; };
+		8C1A2B3C4D5E6F708192034C /* PulseFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192034D /* PulseFeedView.swift */; };
+		8C1A2B3C4D5E6F708192034E /* PulseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1A2B3C4D5E6F708192034F /* PulseEvent.swift */; };
+		9011153F20CE225A8F5A26F3 /* BriefCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B06E100D40CF89433F1555 /* BriefCards.swift */; };
+		93406B7ABA93DF55C4EFD4B0 /* CivicLifeEventPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C902CD71A4BF060D8C2C10E /* CivicLifeEventPlan.swift */; };
+		98CA9BE3D49A6195EB5254CC /* Privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 622CF8FACEFE71E5A15A403C /* Privacy.md */; };
+		9CB5779F00F9D95614A79D1D /* CivicIntegrationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F7B0BD7247AF19FB62292D /* CivicIntegrationSettings.swift */; };
+		AA67CD43E109F7384847482A /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDACD26D1692D32871BD2EE /* MarkdownText.swift */; };
+		AB1234567890BETACBE1A001 /* BetaFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1234567890BETACBE1A002 /* BetaFeatures.swift */; };
+		ADD5357C141B4B2CA2CA3387 /* SourcesPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA30346548ACD92E08A6D1EE /* SourcesPanelView.swift */; };
+		B43F27F12EE8D22930E1F822 /* Terms.md in Resources */ = {isa = PBXBuildFile; fileRef = DEFAB176100335D4211524C0 /* Terms.md */; };
+		BCC6FCC5155708A5D10BB2B1 /* BriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D797262B06D0641F458ACB /* BriefView.swift */; };
+		C870DBFF47A923FC86C388DD /* PetitionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD44C37B3A00CEB1B21893 /* PetitionDetailView.swift */; };
+		C91CF5C68A5DB0EDE490205E /* CivicPetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08430257271A742BF0024073 /* CivicPetition.swift */; };
+		D178EAA4D90E6BECF29E1A96 /* ZipChangedBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1626AE0F80098E77F664644 /* ZipChangedBanner.swift */; };
+		DCBDFDEF5683BA2664A8D3E6 /* RepScorecardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AF34FFD9F62B39F1B56F69 /* RepScorecardView.swift */; };
+		DD6DB642738636B083B8CABB /* GroupLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480D94A373FB11EED55BEE9 /* GroupLetter.swift */; };
+		EC4B61E123B0C51AF1FA3C38 /* OfficialsDirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C39FAA47D202D758ADBFB4E /* OfficialsDirectoryView.swift */; };
+		F143723ED4C50996D7B43CC8 /* LegalDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E746B82320945C7900B469 /* LegalDocumentView.swift */; };
+		F27FCDA529AF0FC158362DD8 /* IntegrationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C6FB34EFB12FE496805A /* IntegrationsService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		003B4C96684CF7FA4D34DD18 /* LifeEventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventsService.swift; sourceTree = "<group>"; };
+		05262FECDC749CDF0B663C24 /* HomePulseStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePulseStrip.swift; sourceTree = "<group>"; };
+		08430257271A742BF0024073 /* CivicPetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicPetition.swift; sourceTree = "<group>"; };
+		0FDC69A0A0622E0FC55FFDF4 /* CivicComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicComment.swift; sourceTree = "<group>"; };
+		13C78EB0BFD6262F696D376B /* BriefService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefService.swift; sourceTree = "<group>"; };
+		18DF56093083B2ECAE8284F8 /* PetitionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionsService.swift; sourceTree = "<group>"; };
+		19EC883F1818F8AF5ABEAF25 /* SourcesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesService.swift; sourceTree = "<group>"; };
+		2258FE47BD61038C604E8DA6 /* PetitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionsView.swift; sourceTree = "<group>"; };
+		37533E5E6C6F5FE7088FEA9B /* BallotScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotScannerView.swift; sourceTree = "<group>"; };
+		3A6F00012CEB400100C1C0DE /* CivicOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicOSApp.swift; sourceTree = "<group>"; };
+		3A6F00022CEB400100C1C0DE /* CivicOSStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicOSStore.swift; sourceTree = "<group>"; };
+		3A6F00032CEB400100C1C0DE /* CivicAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicAction.swift; sourceTree = "<group>"; };
+		3A6F00042CEB400100C1C0DE /* CivicIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicIssue.swift; sourceTree = "<group>"; };
+		3A6F00052CEB400100C1C0DE /* MockCivicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCivicData.swift; sourceTree = "<group>"; };
+		3A6F00062CEB400100C1C0DE /* CivicFilingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicFilingService.swift; sourceTree = "<group>"; };
+		3A6F00072CEB400100C1C0DE /* CivicTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicTheme.swift; sourceTree = "<group>"; };
+		3A6F00082CEB400100C1C0DE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		3A6F00092CEB400100C1C0DE /* IssueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailView.swift; sourceTree = "<group>"; };
+		3A6F000A2CEB400100C1C0DE /* CivicGlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicGlassCard.swift; sourceTree = "<group>"; };
+		3A6F000B2CEB400100C1C0DE /* ImpactCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactCardView.swift; sourceTree = "<group>"; };
+		3A6F000C2CEB400100C1C0DE /* TranslationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationCardView.swift; sourceTree = "<group>"; };
+		3A6F000D2CEB400100C1C0DE /* ActionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionBarView.swift; sourceTree = "<group>"; };
+		3A6F000E2CEB400100C1C0DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A6F000F2CEB400100C1C0DE /* CivicOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CivicOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6F00502CEB400100C1C0DE /* HTTPCivicFilingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCivicFilingService.swift; sourceTree = "<group>"; };
+		3A6F00602CEB400100C1C0DE /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		3A6F00622CEB400100C1C0DE /* ProfileResolverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResolverService.swift; sourceTree = "<group>"; };
+		3A6F00642CEB400100C1C0DE /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		3A6F00662CEB400100C1C0DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A6F00682CEB400100C1C0DE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3A6F00702CEB400100C1C0DE /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		3A6F00722CEB400100C1C0DE /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		3A6F00742CEB400100C1C0DE /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		3A6F00802CEB400100C1C0DE /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		3A6F00822CEB400100C1C0DE /* OutreachGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutreachGroup.swift; sourceTree = "<group>"; };
+		3A6F00842CEB400100C1C0DE /* TopicsPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsPickerSheet.swift; sourceTree = "<group>"; };
+		3A6F00862CEB400100C1C0DE /* GroupsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsListView.swift; sourceTree = "<group>"; };
+		3A6F00882CEB400100C1C0DE /* GroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailView.swift; sourceTree = "<group>"; };
+		3A6F008A2CEB400100C1C0DE /* ShareReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareReceiptView.swift; sourceTree = "<group>"; };
+		3A6F00902CEB400100C1C0DE /* BackgroundCitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCitation.swift; sourceTree = "<group>"; };
+		3A6F00922CEB400100C1C0DE /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		3A6F00942CEB400100C1C0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6F00A02CEB400100C1C0DE /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		3A6F00A22CEB400100C1C0DE /* IssueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueService.swift; sourceTree = "<group>"; };
+		3A6F00B02CEB400100C1C0DE /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		3A6F00B22CEB400100C1C0DE /* DraftFilingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftFilingSheet.swift; sourceTree = "<group>"; };
+		3A6F00B42CEB400100C1C0DE /* FilingHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilingHistoryView.swift; sourceTree = "<group>"; };
+		3A6F00B62CEB400100C1C0DE /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		3A6F00B82CEB400100C1C0DE /* SafariSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariSheet.swift; sourceTree = "<group>"; };
+		3A6F00C02CEB400100C1C0DE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3A6F00C22CEB400100C1C0DE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		3A6F00D02CEB400100C1C0DE /* CivicRadar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicRadar.swift; sourceTree = "<group>"; };
+		3A6F00D22CEB400100C1C0DE /* CivicRadarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicRadarViews.swift; sourceTree = "<group>"; };
+		3A6F00D42CEB400100C1C0DE /* CivicActionFlowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicActionFlowViews.swift; sourceTree = "<group>"; };
+		3A6F00E02CEB400100C1C0DE /* SocialPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialPost.swift; sourceTree = "<group>"; };
+		3A6F00E22CEB400100C1C0DE /* SocialFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialFeedView.swift; sourceTree = "<group>"; };
+		3A6F00F02CEB400100C1C0DE /* CivicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicService.swift; sourceTree = "<group>"; };
+		3A6F00F22CEB400100C1C0DE /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		3A6F01002CEB400100C1C0DE /* VoiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceService.swift; sourceTree = "<group>"; };
+		3A6F01022CEB400100C1C0DE /* VoiceAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantView.swift; sourceTree = "<group>"; };
+		3D4EC40FD82B66A0C291372D /* BriefDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefDetailView.swift; sourceTree = "<group>"; };
+		3E5DCEC3B8FE50B8D319EBCD /* WhatChangedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatChangedCard.swift; sourceTree = "<group>"; };
+		4C902CD71A4BF060D8C2C10E /* CivicLifeEventPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicLifeEventPlan.swift; sourceTree = "<group>"; };
+		53F7B0BD7247AF19FB62292D /* CivicIntegrationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicIntegrationSettings.swift; sourceTree = "<group>"; };
+		622CF8FACEFE71E5A15A403C /* Privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Privacy.md; sourceTree = "<group>"; };
+		64E746B82320945C7900B469 /* LegalDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDocumentView.swift; sourceTree = "<group>"; };
+		6BDBC6AFD9ED691F18A1168B /* OfficialDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialDetailView.swift; sourceTree = "<group>"; };
+		72A9BB795F668F47D0EEBD67 /* OfficialsDirectoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsDirectoryService.swift; sourceTree = "<group>"; };
+		73963F1F84AAA5640D83C761 /* BallotAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotAnalysis.swift; sourceTree = "<group>"; };
+		784BC25BBC88B95AF726728E /* PetitionComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionComposerView.swift; sourceTree = "<group>"; };
+		7A8F6043CDB245BF4378BDEB /* CivicNotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicNotificationScheduler.swift; sourceTree = "<group>"; };
+		7B7BF258745542C85BAB8E36 /* VoterRailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoterRailService.swift; sourceTree = "<group>"; };
+		7C39FAA47D202D758ADBFB4E /* OfficialsDirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialsDirectoryView.swift; sourceTree = "<group>"; };
+		86269FB990C83B2F4D7FBFBD /* BackendOfflineBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendOfflineBanner.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920305 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920307 /* ReadAloudButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAloudButton.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920309 /* AthenURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenURLSession.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192030B /* ReportPostSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPostSheet.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192030D /* BlockedAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedAccountsView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192030F /* ModerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModerationService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920311 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920313 /* AIDisclosureChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDisclosureChip.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920315 /* BillCompareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCompareSheet.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920317 /* GlobalSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSearchBar.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920319 /* QuotaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192031B /* AIQuotaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIQuotaCard.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192031D /* AthenInboxNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthenInboxNotification.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192031F /* NotificationsInboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsInboxView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920321 /* ActivityTickerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTickerCard.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920323 /* SquareComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareComponents.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920325 /* RefreshStreamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshStreamService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920327 /* RefreshProgressDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshProgressDrawer.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920329 /* HeadlineNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineNewsService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192032B /* NewsHeadlineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadlineCard.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192032D /* ActTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActTabView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192032F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920331 /* CivicSavedSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicSavedSearch.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920333 /* CivicTimelineEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicTimelineEvent.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920335 /* SavedSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920337 /* TimelineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineService.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920339 /* SavedSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSearchesView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192033B /* BillTimelineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTimelineCard.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192033D /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192033F /* CivicUrlAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicUrlAnalysis.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920341 /* MagicalServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicalServices.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920343 /* PredictiveNudgeScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictiveNudgeScheduler.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920345 /* UrlAnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlAnalyzeView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920347 /* PersonalImpactSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalImpactSheet.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F7081920349 /* HomeNewsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsCache.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192034B /* IssueFilingTally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFilingTally.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192034D /* PulseFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseFeedView.swift; sourceTree = "<group>"; };
+		8C1A2B3C4D5E6F708192034F /* PulseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseEvent.swift; sourceTree = "<group>"; };
+		8F8DCCCE75B913C22BAB15B8 /* DraftVariantsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftVariantsService.swift; sourceTree = "<group>"; };
+		91AF34FFD9F62B39F1B56F69 /* RepScorecardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepScorecardView.swift; sourceTree = "<group>"; };
+		990B256B5D72065606F74AD8 /* VoterHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoterHubView.swift; sourceTree = "<group>"; };
+		9F442399DE2590EAFC2D8F9B /* ConnectionsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsPanelView.swift; sourceTree = "<group>"; };
+		A16C470F02F02D1C39482651 /* VoterRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoterRegistrationView.swift; sourceTree = "<group>"; };
+		A35CAA1B54B8909AF07D7AFF /* CivicVoterRail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicVoterRail.swift; sourceTree = "<group>"; };
+		A3CCAD4845937AF0B206BDB9 /* CivicIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicIntegration.swift; sourceTree = "<group>"; };
+		A5B06E100D40CF89433F1555 /* BriefCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefCards.swift; sourceTree = "<group>"; };
+		AB1234567890BETACBE1A002 /* BetaFeatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaFeatures.swift; sourceTree = "<group>"; };
+		AF6FF57A549F83F0EF98A60B /* AmbientBriefingMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbientBriefingMonitor.swift; sourceTree = "<group>"; };
+		B29CD0DE2874CDFD32633A51 /* PostThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostThreadView.swift; sourceTree = "<group>"; };
+		B8446DA3938284A6B2A2C4E6 /* CivicSourceDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicSourceDescriptor.swift; sourceTree = "<group>"; };
+		BA8A9C49985DA98B9C2DEF6A /* CivicBriefAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicBriefAnalysis.swift; sourceTree = "<group>"; };
+		BC50782CEACEDCAF07AFBBD8 /* DirectoryOfficial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryOfficial.swift; sourceTree = "<group>"; };
+		BDDACD26D1692D32871BD2EE /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
+		C007F304ECF8A61C67003CB7 /* BallotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotService.swift; sourceTree = "<group>"; };
+		C480D94A373FB11EED55BEE9 /* GroupLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLetter.swift; sourceTree = "<group>"; };
+		C5D1C6FB34EFB12FE496805A /* IntegrationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationsService.swift; sourceTree = "<group>"; };
+		C7913EC2F729F98C095DF03F /* RefreshService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshService.swift; sourceTree = "<group>"; };
+		CA30346548ACD92E08A6D1EE /* SourcesPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesPanelView.swift; sourceTree = "<group>"; };
+		D5CD44C37B3A00CEB1B21893 /* PetitionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionDetailView.swift; sourceTree = "<group>"; };
+		DEFAB176100335D4211524C0 /* Terms.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Terms.md; sourceTree = "<group>"; };
+		E1626AE0F80098E77F664644 /* ZipChangedBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipChangedBanner.swift; sourceTree = "<group>"; };
+		E4D797262B06D0641F458ACB /* BriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefView.swift; sourceTree = "<group>"; };
+		EF7EB0415A3CC7F20AD91D35 /* LifeEventComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventComposerView.swift; sourceTree = "<group>"; };
+		FA77DF8CFFF935F650E21341 /* CivicDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicDiff.swift; sourceTree = "<group>"; };
+		FAF89372F584CADE0D4D3990 /* SampleBallotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBallotView.swift; sourceTree = "<group>"; };
+		FB73605DEFDA0F217A464F15 /* GroupLetterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLetterSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A6F00212CEB400100C1C0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A6F00222CEB400100C1C0DE = {
+			isa = PBXGroup;
+			children = (
+				3A6F00232CEB400100C1C0DE /* CivicOS */,
+				3A6F00242CEB400100C1C0DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A6F00232CEB400100C1C0DE /* CivicOS */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00252CEB400100C1C0DE /* App */,
+				3A6F00262CEB400100C1C0DE /* Models */,
+				3A6F00272CEB400100C1C0DE /* Data */,
+				3A6F00282CEB400100C1C0DE /* Services */,
+				3A6F00292CEB400100C1C0DE /* Design */,
+				3A6F002A2CEB400100C1C0DE /* Views */,
+				3A6F002B2CEB400100C1C0DE /* Resources */,
+			);
+			path = CivicOS;
+			sourceTree = "<group>";
+		};
+		3A6F00242CEB400100C1C0DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F000F2CEB400100C1C0DE /* CivicOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A6F00252CEB400100C1C0DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00012CEB400100C1C0DE /* CivicOSApp.swift */,
+				3A6F00022CEB400100C1C0DE /* CivicOSStore.swift */,
+				AB1234567890BETACBE1A002 /* BetaFeatures.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3A6F00262CEB400100C1C0DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00032CEB400100C1C0DE /* CivicAction.swift */,
+				3A6F00042CEB400100C1C0DE /* CivicIssue.swift */,
+				3A6F00D02CEB400100C1C0DE /* CivicRadar.swift */,
+				3A6F00E02CEB400100C1C0DE /* SocialPost.swift */,
+				3A6F00F02CEB400100C1C0DE /* CivicService.swift */,
+				3A6F00602CEB400100C1C0DE /* UserProfile.swift */,
+				3A6F00702CEB400100C1C0DE /* ChatMessage.swift */,
+				3A6F00802CEB400100C1C0DE /* Topic.swift */,
+				3A6F00822CEB400100C1C0DE /* OutreachGroup.swift */,
+				3A6F00902CEB400100C1C0DE /* BackgroundCitation.swift */,
+				3A6F00A02CEB400100C1C0DE /* AppSettings.swift */,
+				B8446DA3938284A6B2A2C4E6 /* CivicSourceDescriptor.swift */,
+				BA8A9C49985DA98B9C2DEF6A /* CivicBriefAnalysis.swift */,
+				0FDC69A0A0622E0FC55FFDF4 /* CivicComment.swift */,
+				FA77DF8CFFF935F650E21341 /* CivicDiff.swift */,
+				73963F1F84AAA5640D83C761 /* BallotAnalysis.swift */,
+				C480D94A373FB11EED55BEE9 /* GroupLetter.swift */,
+				A3CCAD4845937AF0B206BDB9 /* CivicIntegration.swift */,
+				08430257271A742BF0024073 /* CivicPetition.swift */,
+				A35CAA1B54B8909AF07D7AFF /* CivicVoterRail.swift */,
+				4C902CD71A4BF060D8C2C10E /* CivicLifeEventPlan.swift */,
+				53F7B0BD7247AF19FB62292D /* CivicIntegrationSettings.swift */,
+				BC50782CEACEDCAF07AFBBD8 /* DirectoryOfficial.swift */,
+				8C1A2B3C4D5E6F708192031D /* AthenInboxNotification.swift */,
+				8C1A2B3C4D5E6F7081920331 /* CivicSavedSearch.swift */,
+				8C1A2B3C4D5E6F7081920333 /* CivicTimelineEvent.swift */,
+				8C1A2B3C4D5E6F708192033F /* CivicUrlAnalysis.swift */,
+				8C1A2B3C4D5E6F708192034B /* IssueFilingTally.swift */,
+				8C1A2B3C4D5E6F708192034F /* PulseEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A6F00272CEB400100C1C0DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00052CEB400100C1C0DE /* MockCivicData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3A6F00282CEB400100C1C0DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00062CEB400100C1C0DE /* CivicFilingService.swift */,
+				3A6F00502CEB400100C1C0DE /* HTTPCivicFilingService.swift */,
+				3A6F00622CEB400100C1C0DE /* ProfileResolverService.swift */,
+				3A6F00722CEB400100C1C0DE /* ChatService.swift */,
+				3A6F00922CEB400100C1C0DE /* NewsService.swift */,
+				3A6F00A22CEB400100C1C0DE /* IssueService.swift */,
+				3A6F01002CEB400100C1C0DE /* VoiceService.swift */,
+				19EC883F1818F8AF5ABEAF25 /* SourcesService.swift */,
+				C7913EC2F729F98C095DF03F /* RefreshService.swift */,
+				13C78EB0BFD6262F696D376B /* BriefService.swift */,
+				7A8F6043CDB245BF4378BDEB /* CivicNotificationScheduler.swift */,
+				8F8DCCCE75B913C22BAB15B8 /* DraftVariantsService.swift */,
+				C007F304ECF8A61C67003CB7 /* BallotService.swift */,
+				AF6FF57A549F83F0EF98A60B /* AmbientBriefingMonitor.swift */,
+				C5D1C6FB34EFB12FE496805A /* IntegrationsService.swift */,
+				18DF56093083B2ECAE8284F8 /* PetitionsService.swift */,
+				7B7BF258745542C85BAB8E36 /* VoterRailService.swift */,
+				003B4C96684CF7FA4D34DD18 /* LifeEventsService.swift */,
+				72A9BB795F668F47D0EEBD67 /* OfficialsDirectoryService.swift */,
+				8C1A2B3C4D5E6F7081920305 /* SpeechService.swift */,
+				8C1A2B3C4D5E6F7081920309 /* AthenURLSession.swift */,
+				8C1A2B3C4D5E6F708192030F /* ModerationService.swift */,
+				8C1A2B3C4D5E6F7081920311 /* ImageCache.swift */,
+				8C1A2B3C4D5E6F7081920319 /* QuotaService.swift */,
+				8C1A2B3C4D5E6F7081920325 /* RefreshStreamService.swift */,
+				8C1A2B3C4D5E6F7081920329 /* HeadlineNewsService.swift */,
+				8C1A2B3C4D5E6F7081920335 /* SavedSearchService.swift */,
+				8C1A2B3C4D5E6F7081920337 /* TimelineService.swift */,
+				8C1A2B3C4D5E6F7081920341 /* MagicalServices.swift */,
+				8C1A2B3C4D5E6F7081920343 /* PredictiveNudgeScheduler.swift */,
+				8C1A2B3C4D5E6F7081920349 /* HomeNewsCache.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3A6F00292CEB400100C1C0DE /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00072CEB400100C1C0DE /* CivicTheme.swift */,
+				3A6F00B02CEB400100C1C0DE /* Haptics.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		3A6F002A2CEB400100C1C0DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F00C02CEB400100C1C0DE /* OnboardingView.swift */,
+				3A6F00642CEB400100C1C0DE /* MainTabView.swift */,
+				3A6F00662CEB400100C1C0DE /* HomeView.swift */,
+				3A6F00F22CEB400100C1C0DE /* HelpView.swift */,
+				3A6F00082CEB400100C1C0DE /* DashboardView.swift */,
+				3A6F00E22CEB400100C1C0DE /* SocialFeedView.swift */,
+				3A6F00742CEB400100C1C0DE /* ChatView.swift */,
+				3A6F01022CEB400100C1C0DE /* VoiceAssistantView.swift */,
+				3A6F00682CEB400100C1C0DE /* ProfileView.swift */,
+				3A6F00092CEB400100C1C0DE /* IssueDetailView.swift */,
+				3A6F00842CEB400100C1C0DE /* TopicsPickerSheet.swift */,
+				3A6F00862CEB400100C1C0DE /* GroupsListView.swift */,
+				3A6F00882CEB400100C1C0DE /* GroupDetailView.swift */,
+				3A6F008A2CEB400100C1C0DE /* ShareReceiptView.swift */,
+				3A6F00B22CEB400100C1C0DE /* DraftFilingSheet.swift */,
+				3A6F00B42CEB400100C1C0DE /* FilingHistoryView.swift */,
+				3A6F00B62CEB400100C1C0DE /* BookmarksView.swift */,
+				3A6F00B82CEB400100C1C0DE /* SafariSheet.swift */,
+				3A6F00C22CEB400100C1C0DE /* AboutView.swift */,
+				3A6F002C2CEB400100C1C0DE /* Components */,
+				CA30346548ACD92E08A6D1EE /* SourcesPanelView.swift */,
+				E4D797262B06D0641F458ACB /* BriefView.swift */,
+				3D4EC40FD82B66A0C291372D /* BriefDetailView.swift */,
+				B29CD0DE2874CDFD32633A51 /* PostThreadView.swift */,
+				64E746B82320945C7900B469 /* LegalDocumentView.swift */,
+				37533E5E6C6F5FE7088FEA9B /* BallotScannerView.swift */,
+				FB73605DEFDA0F217A464F15 /* GroupLetterSheet.swift */,
+				9F442399DE2590EAFC2D8F9B /* ConnectionsPanelView.swift */,
+				2258FE47BD61038C604E8DA6 /* PetitionsView.swift */,
+				D5CD44C37B3A00CEB1B21893 /* PetitionDetailView.swift */,
+				784BC25BBC88B95AF726728E /* PetitionComposerView.swift */,
+				990B256B5D72065606F74AD8 /* VoterHubView.swift */,
+				FAF89372F584CADE0D4D3990 /* SampleBallotView.swift */,
+				A16C470F02F02D1C39482651 /* VoterRegistrationView.swift */,
+				91AF34FFD9F62B39F1B56F69 /* RepScorecardView.swift */,
+				EF7EB0415A3CC7F20AD91D35 /* LifeEventComposerView.swift */,
+				7C39FAA47D202D758ADBFB4E /* OfficialsDirectoryView.swift */,
+				6BDBC6AFD9ED691F18A1168B /* OfficialDetailView.swift */,
+				8C1A2B3C4D5E6F708192030B /* ReportPostSheet.swift */,
+				8C1A2B3C4D5E6F708192030D /* BlockedAccountsView.swift */,
+				8C1A2B3C4D5E6F7081920315 /* BillCompareSheet.swift */,
+				8C1A2B3C4D5E6F708192031F /* NotificationsInboxView.swift */,
+				8C1A2B3C4D5E6F7081920323 /* SquareComponents.swift */,
+				8C1A2B3C4D5E6F708192032D /* ActTabView.swift */,
+				8C1A2B3C4D5E6F7081920339 /* SavedSearchesView.swift */,
+				8C1A2B3C4D5E6F7081920345 /* UrlAnalyzeView.swift */,
+				8C1A2B3C4D5E6F7081920347 /* PersonalImpactSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A6F002B2CEB400100C1C0DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F000E2CEB400100C1C0DE /* Assets.xcassets */,
+				3A6F00942CEB400100C1C0DE /* Info.plist */,
+				622CF8FACEFE71E5A15A403C /* Privacy.md */,
+				DEFAB176100335D4211524C0 /* Terms.md */,
+				8C1A2B3C4D5E6F708192032F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A6F002C2CEB400100C1C0DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A6F000A2CEB400100C1C0DE /* CivicGlassCard.swift */,
+				3A6F000B2CEB400100C1C0DE /* ImpactCardView.swift */,
+				3A6F000C2CEB400100C1C0DE /* TranslationCardView.swift */,
+				3A6F000D2CEB400100C1C0DE /* ActionBarView.swift */,
+				3A6F00D22CEB400100C1C0DE /* CivicRadarViews.swift */,
+				3A6F00D42CEB400100C1C0DE /* CivicActionFlowViews.swift */,
+				A5B06E100D40CF89433F1555 /* BriefCards.swift */,
+				86269FB990C83B2F4D7FBFBD /* BackendOfflineBanner.swift */,
+				3E5DCEC3B8FE50B8D319EBCD /* WhatChangedCard.swift */,
+				05262FECDC749CDF0B663C24 /* HomePulseStrip.swift */,
+				BDDACD26D1692D32871BD2EE /* MarkdownText.swift */,
+				E1626AE0F80098E77F664644 /* ZipChangedBanner.swift */,
+				8C1A2B3C4D5E6F7081920307 /* ReadAloudButton.swift */,
+				8C1A2B3C4D5E6F7081920313 /* AIDisclosureChip.swift */,
+				8C1A2B3C4D5E6F7081920317 /* GlobalSearchBar.swift */,
+				8C1A2B3C4D5E6F708192031B /* AIQuotaCard.swift */,
+				8C1A2B3C4D5E6F7081920321 /* ActivityTickerCard.swift */,
+				8C1A2B3C4D5E6F7081920327 /* RefreshProgressDrawer.swift */,
+				8C1A2B3C4D5E6F708192032B /* NewsHeadlineCard.swift */,
+				8C1A2B3C4D5E6F708192033B /* BillTimelineCard.swift */,
+				8C1A2B3C4D5E6F708192033D /* ShareSheet.swift */,
+				8C1A2B3C4D5E6F708192034D /* PulseFeedView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A6F002D2CEB400100C1C0DE /* CivicOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6F003A2CEB400100C1C0DE /* Build configuration list for PBXNativeTarget "CivicOS" */;
+			buildPhases = (
+				3A6F00302CEB400100C1C0DE /* Sources */,
+				3A6F00212CEB400100C1C0DE /* Frameworks */,
+				3A6F00312CEB400100C1C0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CivicOS;
+			productName = CivicOS;
+			productReference = 3A6F000F2CEB400100C1C0DE /* CivicOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A6F002E2CEB400100C1C0DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					3A6F002D2CEB400100C1C0DE = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 3A6F002F2CEB400100C1C0DE /* Build configuration list for PBXProject "CivicOS" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A6F00222CEB400100C1C0DE;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = 3A6F00242CEB400100C1C0DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A6F002D2CEB400100C1C0DE /* CivicOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A6F00312CEB400100C1C0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6F001E2CEB400100C1C0DE /* Assets.xcassets in Resources */,
+				98CA9BE3D49A6195EB5254CC /* Privacy.md in Resources */,
+				B43F27F12EE8D22930E1F822 /* Terms.md in Resources */,
+				8C1A2B3C4D5E6F708192032E /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A6F00302CEB400100C1C0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6F00112CEB400100C1C0DE /* CivicOSApp.swift in Sources */,
+				3A6F00122CEB400100C1C0DE /* CivicOSStore.swift in Sources */,
+				AB1234567890BETACBE1A001 /* BetaFeatures.swift in Sources */,
+				3A6F00132CEB400100C1C0DE /* CivicAction.swift in Sources */,
+				3A6F00142CEB400100C1C0DE /* CivicIssue.swift in Sources */,
+				3A6F00D12CEB400100C1C0DE /* CivicRadar.swift in Sources */,
+				3A6F00E12CEB400100C1C0DE /* SocialPost.swift in Sources */,
+				3A6F00F12CEB400100C1C0DE /* CivicService.swift in Sources */,
+				3A6F00152CEB400100C1C0DE /* MockCivicData.swift in Sources */,
+				3A6F00162CEB400100C1C0DE /* CivicFilingService.swift in Sources */,
+				3A6F00512CEB400100C1C0DE /* HTTPCivicFilingService.swift in Sources */,
+				3A6F00612CEB400100C1C0DE /* UserProfile.swift in Sources */,
+				3A6F00632CEB400100C1C0DE /* ProfileResolverService.swift in Sources */,
+				3A6F00652CEB400100C1C0DE /* MainTabView.swift in Sources */,
+				3A6F00672CEB400100C1C0DE /* HomeView.swift in Sources */,
+				3A6F00F32CEB400100C1C0DE /* HelpView.swift in Sources */,
+				3A6F00692CEB400100C1C0DE /* ProfileView.swift in Sources */,
+				3A6F00712CEB400100C1C0DE /* ChatMessage.swift in Sources */,
+				3A6F00732CEB400100C1C0DE /* ChatService.swift in Sources */,
+				3A6F00752CEB400100C1C0DE /* ChatView.swift in Sources */,
+				3A6F00E32CEB400100C1C0DE /* SocialFeedView.swift in Sources */,
+				3A6F00812CEB400100C1C0DE /* Topic.swift in Sources */,
+				3A6F00832CEB400100C1C0DE /* OutreachGroup.swift in Sources */,
+				3A6F00852CEB400100C1C0DE /* TopicsPickerSheet.swift in Sources */,
+				3A6F00872CEB400100C1C0DE /* GroupsListView.swift in Sources */,
+				3A6F00892CEB400100C1C0DE /* GroupDetailView.swift in Sources */,
+				3A6F008B2CEB400100C1C0DE /* ShareReceiptView.swift in Sources */,
+				3A6F00912CEB400100C1C0DE /* BackgroundCitation.swift in Sources */,
+				3A6F00932CEB400100C1C0DE /* NewsService.swift in Sources */,
+				3A6F00A12CEB400100C1C0DE /* AppSettings.swift in Sources */,
+				3A6F00A32CEB400100C1C0DE /* IssueService.swift in Sources */,
+				3A6F00B12CEB400100C1C0DE /* Haptics.swift in Sources */,
+				3A6F00B32CEB400100C1C0DE /* DraftFilingSheet.swift in Sources */,
+				3A6F00B52CEB400100C1C0DE /* FilingHistoryView.swift in Sources */,
+				3A6F00B72CEB400100C1C0DE /* BookmarksView.swift in Sources */,
+				3A6F00B92CEB400100C1C0DE /* SafariSheet.swift in Sources */,
+				3A6F00C12CEB400100C1C0DE /* OnboardingView.swift in Sources */,
+				3A6F00C32CEB400100C1C0DE /* AboutView.swift in Sources */,
+				3A6F01012CEB400100C1C0DE /* VoiceService.swift in Sources */,
+				3A6F01032CEB400100C1C0DE /* VoiceAssistantView.swift in Sources */,
+				3A6F00172CEB400100C1C0DE /* CivicTheme.swift in Sources */,
+				3A6F00182CEB400100C1C0DE /* DashboardView.swift in Sources */,
+				3A6F00192CEB400100C1C0DE /* IssueDetailView.swift in Sources */,
+				3A6F001A2CEB400100C1C0DE /* CivicGlassCard.swift in Sources */,
+				3A6F001B2CEB400100C1C0DE /* ImpactCardView.swift in Sources */,
+				3A6F001C2CEB400100C1C0DE /* TranslationCardView.swift in Sources */,
+				3A6F001D2CEB400100C1C0DE /* ActionBarView.swift in Sources */,
+				3A6F00D32CEB400100C1C0DE /* CivicRadarViews.swift in Sources */,
+				3A6F00D52CEB400100C1C0DE /* CivicActionFlowViews.swift in Sources */,
+				0B533A58B955373CB92F3689 /* CivicSourceDescriptor.swift in Sources */,
+				48DD46B8516FCF190C8729CB /* SourcesService.swift in Sources */,
+				ADD5357C141B4B2CA2CA3387 /* SourcesPanelView.swift in Sources */,
+				2A652F287DC29825D61A218D /* RefreshService.swift in Sources */,
+				6836177856245A7F35586899 /* CivicBriefAnalysis.swift in Sources */,
+				514BCB9EDA3616CFF34390D7 /* BriefService.swift in Sources */,
+				BCC6FCC5155708A5D10BB2B1 /* BriefView.swift in Sources */,
+				9011153F20CE225A8F5A26F3 /* BriefCards.swift in Sources */,
+				1371DBA47B5A7D042E16A21D /* CivicNotificationScheduler.swift in Sources */,
+				20EBCCFB71EE243393550419 /* BriefDetailView.swift in Sources */,
+				1121FD4A0ECD40868455291E /* DraftVariantsService.swift in Sources */,
+				5BCC83C39451EEF461941E65 /* CivicComment.swift in Sources */,
+				5844C728D012220ED77C80F5 /* PostThreadView.swift in Sources */,
+				240A8BFC2471DA3AD1A50927 /* BackendOfflineBanner.swift in Sources */,
+				F143723ED4C50996D7B43CC8 /* LegalDocumentView.swift in Sources */,
+				0E8E2B19A21C63FE796B47B9 /* CivicDiff.swift in Sources */,
+				0DA4A3EB4C6ECA1978B11540 /* WhatChangedCard.swift in Sources */,
+				1A1A0BD1238DC40329EDD74D /* BallotAnalysis.swift in Sources */,
+				49CA0E7927D1548EDDD84D5D /* BallotService.swift in Sources */,
+				17130BA9C1712A18EF1628BD /* BallotScannerView.swift in Sources */,
+				DD6DB642738636B083B8CABB /* GroupLetter.swift in Sources */,
+				756D051799704A3610FEFDB8 /* GroupLetterSheet.swift in Sources */,
+				12C85CD90479F649D95F6388 /* AmbientBriefingMonitor.swift in Sources */,
+				3E6CFEEE1ECCD12417B49253 /* HomePulseStrip.swift in Sources */,
+				6CE250B0D94998085AC72672 /* CivicIntegration.swift in Sources */,
+				F27FCDA529AF0FC158362DD8 /* IntegrationsService.swift in Sources */,
+				4B01F282A1CBD7B5D6CC14FD /* ConnectionsPanelView.swift in Sources */,
+				AA67CD43E109F7384847482A /* MarkdownText.swift in Sources */,
+				C91CF5C68A5DB0EDE490205E /* CivicPetition.swift in Sources */,
+				6348C82BB25B7D3A101B3D95 /* PetitionsService.swift in Sources */,
+				4DB3198F3F282FA42870AFF4 /* PetitionsView.swift in Sources */,
+				C870DBFF47A923FC86C388DD /* PetitionDetailView.swift in Sources */,
+				368470911A6547D859A80CED /* PetitionComposerView.swift in Sources */,
+				5C6EE7925E3A760D0FFBF3C7 /* CivicVoterRail.swift in Sources */,
+				53738931E2BF5DAAE9E21F05 /* VoterRailService.swift in Sources */,
+				4A7188D3B6BDA2AF664359ED /* VoterHubView.swift in Sources */,
+				62CD2E96B231F396F989C4E8 /* SampleBallotView.swift in Sources */,
+				48F5D8CEBB616D447B52C684 /* VoterRegistrationView.swift in Sources */,
+				DCBDFDEF5683BA2664A8D3E6 /* RepScorecardView.swift in Sources */,
+				93406B7ABA93DF55C4EFD4B0 /* CivicLifeEventPlan.swift in Sources */,
+				3BF65A42170AB1DFFE0EAF0A /* LifeEventsService.swift in Sources */,
+				28DF9F42BA293B05F217B4A1 /* LifeEventComposerView.swift in Sources */,
+				9CB5779F00F9D95614A79D1D /* CivicIntegrationSettings.swift in Sources */,
+				D178EAA4D90E6BECF29E1A96 /* ZipChangedBanner.swift in Sources */,
+				535F47FFA17F5CFFA8FDE303 /* DirectoryOfficial.swift in Sources */,
+				2A343243CA2DC0A19BCE503B /* OfficialsDirectoryService.swift in Sources */,
+				EC4B61E123B0C51AF1FA3C38 /* OfficialsDirectoryView.swift in Sources */,
+				5C88D2B48DC8FB0E70CACCE9 /* OfficialDetailView.swift in Sources */,
+				8C1A2B3C4D5E6F7081920304 /* SpeechService.swift in Sources */,
+				8C1A2B3C4D5E6F7081920306 /* ReadAloudButton.swift in Sources */,
+				8C1A2B3C4D5E6F7081920308 /* AthenURLSession.swift in Sources */,
+				8C1A2B3C4D5E6F708192030A /* ReportPostSheet.swift in Sources */,
+				8C1A2B3C4D5E6F708192030C /* BlockedAccountsView.swift in Sources */,
+				8C1A2B3C4D5E6F708192030E /* ModerationService.swift in Sources */,
+				8C1A2B3C4D5E6F7081920310 /* ImageCache.swift in Sources */,
+				8C1A2B3C4D5E6F7081920312 /* AIDisclosureChip.swift in Sources */,
+				8C1A2B3C4D5E6F7081920314 /* BillCompareSheet.swift in Sources */,
+				8C1A2B3C4D5E6F7081920316 /* GlobalSearchBar.swift in Sources */,
+				8C1A2B3C4D5E6F7081920318 /* QuotaService.swift in Sources */,
+				8C1A2B3C4D5E6F708192031A /* AIQuotaCard.swift in Sources */,
+				8C1A2B3C4D5E6F708192031C /* AthenInboxNotification.swift in Sources */,
+				8C1A2B3C4D5E6F708192031E /* NotificationsInboxView.swift in Sources */,
+				8C1A2B3C4D5E6F7081920320 /* ActivityTickerCard.swift in Sources */,
+				8C1A2B3C4D5E6F7081920322 /* SquareComponents.swift in Sources */,
+				8C1A2B3C4D5E6F7081920324 /* RefreshStreamService.swift in Sources */,
+				8C1A2B3C4D5E6F7081920326 /* RefreshProgressDrawer.swift in Sources */,
+				8C1A2B3C4D5E6F7081920328 /* HeadlineNewsService.swift in Sources */,
+				8C1A2B3C4D5E6F708192032A /* NewsHeadlineCard.swift in Sources */,
+				8C1A2B3C4D5E6F708192032C /* ActTabView.swift in Sources */,
+				8C1A2B3C4D5E6F7081920330 /* CivicSavedSearch.swift in Sources */,
+				8C1A2B3C4D5E6F7081920332 /* CivicTimelineEvent.swift in Sources */,
+				8C1A2B3C4D5E6F7081920334 /* SavedSearchService.swift in Sources */,
+				8C1A2B3C4D5E6F7081920336 /* TimelineService.swift in Sources */,
+				8C1A2B3C4D5E6F7081920338 /* SavedSearchesView.swift in Sources */,
+				8C1A2B3C4D5E6F708192033A /* BillTimelineCard.swift in Sources */,
+				8C1A2B3C4D5E6F708192033C /* ShareSheet.swift in Sources */,
+				8C1A2B3C4D5E6F708192033E /* CivicUrlAnalysis.swift in Sources */,
+				8C1A2B3C4D5E6F7081920340 /* MagicalServices.swift in Sources */,
+				8C1A2B3C4D5E6F7081920342 /* PredictiveNudgeScheduler.swift in Sources */,
+				8C1A2B3C4D5E6F7081920344 /* UrlAnalyzeView.swift in Sources */,
+				8C1A2B3C4D5E6F7081920346 /* PersonalImpactSheet.swift in Sources */,
+				8C1A2B3C4D5E6F7081920348 /* HomeNewsCache.swift in Sources */,
+				8C1A2B3C4D5E6F708192034A /* IssueFilingTally.swift in Sources */,
+				8C1A2B3C4D5E6F708192034C /* PulseFeedView.swift in Sources */,
+				8C1A2B3C4D5E6F708192034E /* PulseEvent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A6F00322CEB400100C1C0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A6F00332CEB400100C1C0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A6F00342CEB400100C1C0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4X5MZ8MGH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CivicOS/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Athen;
+				INFOPLIST_KEY_CFBundleName = Athen;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Athen can use the camera for the ballot scanner so you can photograph a printed ballot and get plain-English briefs on each contest.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Athen uses the microphone so you can ask the civic assistant questions out loud.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Athen does not save photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Athen lets you attach a photo to your Square posts. Photos you pick are only used for the post you're composing — Athen does not access your library otherwise.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Athen turns your spoken questions into text so the assistant can answer them. Audio is processed and discarded — Athen does not store recordings.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Athen does not track you across other apps or websites.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisdimarco.athen.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A6F00352CEB400100C1C0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4X5MZ8MGH9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CivicOS/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Athen;
+				INFOPLIST_KEY_CFBundleName = Athen;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Athen can use the camera for the ballot scanner so you can photograph a printed ballot and get plain-English briefs on each contest.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Athen uses the microphone so you can ask the civic assistant questions out loud.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Athen does not save photos to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Athen lets you attach a photo to your Square posts. Photos you pick are only used for the post you're composing — Athen does not access your library otherwise.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Athen turns your spoken questions into text so the assistant can answer them. Audio is processed and discarded — Athen does not store recordings.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Athen does not track you across other apps or websites.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisdimarco.athen.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A6F002F2CEB400100C1C0DE /* Build configuration list for PBXProject "CivicOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6F00322CEB400100C1C0DE /* Debug */,
+				3A6F00332CEB400100C1C0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6F003A2CEB400100C1C0DE /* Build configuration list for PBXNativeTarget "CivicOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6F00342CEB400100C1C0DE /* Debug */,
+				3A6F00352CEB400100C1C0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A6F002E2CEB400100C1C0DE /* Project object */;
+}

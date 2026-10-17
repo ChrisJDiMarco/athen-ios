@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athen — See what power is doing.</title>
+  <meta name="description" content="Athen is a civic engagement app. Pulls every bill, vote, and election that affects you. Explains it in plain English. Gives you one-tap tools to act." />
+  <meta name="theme-color" content="#14B8A6" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314B8A6'/%3E%3Ctext x='50' y='62' font-size='48' font-family='-apple-system' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --ink: #1F242D;
+      --muted: #656E7B;
+      --quiet: #9CA4B0;
+      --canvas: #F9F6EF;
+      --panel: #FFFFFF;
+      --hairline: #E2DED5;
+      --cyan: #14B8A6;
+      --violet: #8B5CF6;
+      --green: #22C55E;
+      --amber: #F59E0B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+      background: var(--canvas);
+      color: var(--ink);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+    header.hero {
+      padding: 80px 0 60px;
+      background: linear-gradient(135deg, var(--cyan) 0%, #0B7385 100%);
+      color: white;
+    }
+    header.hero .wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; }
+    .logo {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px; font-weight: 700;
+      backdrop-filter: blur(20px);
+    }
+    h1 { font-size: 44px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+    .tagline { font-size: 18px; opacity: 0.9; max-width: 520px; }
+    .pillrow { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+    .pill {
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(10px);
+      padding: 8px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 56px 0;
+      border-bottom: 1px solid var(--hairline);
+    }
+    section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      letter-spacing: -0.01em;
+    }
+    section h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--ink);
+    }
+    p { margin-bottom: 14px; color: var(--ink); }
+    ul { margin: 14px 0 14px 22px; }
+    li { margin-bottom: 8px; color: var(--ink); }
+    a { color: var(--cyan); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--panel);
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.92em;
+      border: 1px solid var(--hairline);
+    }
+
+    .nav-pills {
+      display: flex; gap: 8px; flex-wrap: wrap;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--hairline);
+      background: var(--canvas);
+      position: sticky; top: 0;
+      backdrop-filter: blur(20px);
+      z-index: 10;
+    }
+    .nav-pills a {
+      padding: 8px 14px;
+      background: var(--panel);
+      border: 1px solid var(--hairline);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .nav-pills a:hover {
+      background: var(--cyan);
+      color: white;
+      border-color: var(--cyan);
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 40px 0 60px;
+      text-align: center;
+      color: var(--quiet);
+      font-size: 13px;
+    }
+    footer a { color: var(--muted); }
+
+    .last-updated {
+      font-size: 12px;
+      color: var(--quiet);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="logo">A</div>
+      <h1>Athen</h1>
+      <p class="tagline">See what power is doing. Act for the public good. A civic engagement app for people who want to understand bills, contact their reps, and stay informed — without the outrage cycle.</p>
+      <div class="pillrow">
+        <span class="pill">Non-partisan</span>
+        <span class="pill">No tracking</span>
+        <span class="pill">AI-explained briefs</span>
+        <span class="pill">Open data</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-pills">
+    <div class="wrap" style="display: flex; gap: 8px; flex-wrap: wrap;">
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#support">Support</a>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>Athen is a civic engagement app. Enter your ZIP. Get a feed of the bills, votes, and elections that affect <em>you</em> — federal, state, and local — explained in plain English by Claude AI. One tap to write your representative, sign a petition, or get a personalized plan for a life event.</p>
+      <p>Built by Chris DiMarco. Non-partisan. No ads. No data sold. Available on the App Store.</p>
+      <h3>What's inside</h3>
+      <ul>
+        <li><strong>AI Brief</strong> — every bill explained with key facts, both sides, fiscal impact, and what happens if you do nothing</li>
+        <li><strong>Voter Hub</strong> — next election countdown, sample ballot, polling place, registration deadlines, rep scorecard</li>
+        <li><strong>Petitions</strong> — sign or start a petition; Athen handles delivery</li>
+        <li><strong>Officials Directory</strong> — every elected official in the US, searchable</li>
+        <li><strong>Life Events</strong> — describe what's happening (job loss, eviction, new baby) and get a structured civic plan</li>
+        <li><strong>Read Aloud</strong> — ElevenLabs voice reads any brief, plan, or profile</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap">
+      <h2>Privacy Policy</h2>
+      <p class="last-updated">Effective: 2026-05-19 · Contact: chris@logicoutloud.com</p>
+
+      <h3>What we collect</h3>
+      <p>As little as possible. Most of what you do stays on your phone.</p>
+
+      <h3>Stays on your device only</h3>
+      <ul>
+        <li>Your ZIP code (used to find your representatives)</li>
+        <li>Your civic context tags (renter, parent, business owner)</li>
+        <li>Your topic interests (housing, transit, etc.)</li>
+        <li>Your filing receipts and bookmarks</li>
+        <li>Your social posts and comments inside the Square tab</li>
+        <li>App preferences</li>
+      </ul>
+      <p>This data is stored in iOS UserDefaults and never leaves the device unless you explicitly trigger an action.</p>
+
+      <h3>Sent to the Athen backend when you trigger an action</h3>
+      <ul>
+        <li><strong>Endorse / Oppose:</strong> the issue identifier, your ZIP, and the message you reviewed. Backend resolves your rep and drafts text via Anthropic Claude. The draft is returned to your phone and saved to your local filing history. <strong>In v1, Athen does not send the message to the official</strong> — direct delivery rolls out in a later release. If you opt in to Composio Gmail, Athen sends from your own address with your confirmation.</li>
+        <li><strong>Assistant chat:</strong> your message and a redacted snapshot of your visible feed go to Claude via our backend. Not retained after the response.</li>
+        <li><strong>Briefs:</strong> backend reads its own issue cache and may call Claude. No personal data sent — briefs are written once per bill and shared.</li>
+        <li><strong>Audio briefing:</strong> Claude writes script, ElevenLabs renders speech. Only the script text goes to ElevenLabs.</li>
+        <li><strong>Square Report:</strong> we record the post ID, your reported reason, and your per-install UUID for moderation review.</li>
+      </ul>
+
+      <h3>Third-party services</h3>
+      <ul>
+        <li>Anthropic Claude — drafting, briefs, plans, chat</li>
+        <li>ElevenLabs — text-to-speech</li>
+        <li>Composio — opt-in OAuth bridge for Gmail/Calendar/Notion/Slack/etc.</li>
+        <li>OpenStates, Congress.gov, GovInfo, OpenSecrets — read-only public data</li>
+        <li>Google Civic Information API — polling places + ballots (ZIP only)</li>
+        <li>Firecrawl — read-only news + government site scraping</li>
+      </ul>
+
+      <h3>What we don't collect</h3>
+      <ul>
+        <li>No name, email, or phone (no account required)</li>
+        <li>No precise location (ZIP only)</li>
+        <li>No contacts, photos beyond what you attach, biometrics</li>
+        <li>No advertising IDs, no cross-app tracking, no data brokers</li>
+        <li>No browsing or search history</li>
+      </ul>
+
+      <h3>Your rights</h3>
+      <ul>
+        <li>Delete the app to remove all local data</li>
+        <li>Revoke any Composio OAuth in your Composio account</li>
+        <li>Email chris@logicoutloud.com to delete petition signatures stored on backend</li>
+      </ul>
+
+      <h3>Children</h3>
+      <p>Not directed at children under 13. Rated 12+ due to political content.</p>
+
+      <h3>Changes</h3>
+      <p>Material changes will surface a notice in the app on next launch.</p>
+    </div>
+  </section>
+
+  <section id="terms">
+    <div class="wrap">
+      <h2>Terms of Service</h2>
+      <p class="last-updated">Effective: 2026-05-19</p>
+
+      <h3>1. Who can use Athen</h3>
+      <p>Anyone in the United States with an iPhone and a ZIP code. We don't gate by age but the app is rated 12+ due to political content.</p>
+
+      <h3>2. What Athen is and isn't</h3>
+      <p>Athen is informational. We surface government data and explain it. We do not provide legal, electoral, financial, or medical advice. We are not affiliated with any government body or political party.</p>
+
+      <h3>3. AI-generated content</h3>
+      <p>Briefs, drafted letters, and life-event plans are generated by Claude AI and presented for your review. They may contain errors. Always verify before taking action you can't reverse.</p>
+
+      <h3>4. Filings (constituent letters)</h3>
+      <p>In this release, every filing is recorded locally with a confirmation code. Direct delivery to officials' offices is rolling out in a later release. If you connect Gmail via Composio, sends go from your own address with your explicit confirmation.</p>
+
+      <h3>5. Petitions</h3>
+      <p>You may start or sign petitions. We dispatch delivered petitions to the target official's office on the petition deadline or threshold. By signing, you assert your identity is your own.</p>
+
+      <h3>6. User-generated content (Square)</h3>
+      <p>Athen's Square is a public feed. By posting or commenting you agree to all of the following:</p>
+      <p><strong>Zero-tolerance content.</strong> You may not post or share:</p>
+      <ul>
+        <li>Threats, harassment, or content targeting a person or group with violence</li>
+        <li>Sexual content involving minors, or non-consensual sexual content of anyone</li>
+        <li>Promotion of self-harm, suicide, or eating disorders</li>
+        <li>Hate speech (protected classes based on race, religion, ethnicity, national origin, sexual orientation, gender identity, age, or disability)</li>
+        <li>Spam, scams, phishing, or impersonation of another person or organization</li>
+        <li>Doxxing — sharing private personal information without consent</li>
+        <li>Content promoting illegal activity or violating US law</li>
+      </ul>
+      <p><strong>Election integrity.</strong> Athen is non-partisan. You may not post deliberate misinformation about voting (dates, locations, eligibility, methods), threats targeting voters or election workers, or impersonation of a candidate or official.</p>
+      <p><strong>How we enforce.</strong> Every post and comment has a Report action. Reports are reviewed within 24 hours. Confirmed violations result in content removal; repeat offenders are blocked from posting. You can also block individual accounts from your feed.</p>
+      <p><strong>Your content, your accountability.</strong> You own what you post but grant Athen a non-exclusive license to display it in the app.</p>
+      <p><strong>Urgent harm.</strong> If you encounter content depicting imminent harm, contact 911 or the 988 Suicide & Crisis Lifeline directly. Athen is not a crisis response service.</p>
+
+      <h3>7. Acceptable use</h3>
+      <ul>
+        <li>Don't scrape, automate, or DDoS the backend</li>
+        <li>Don't try to impersonate someone else's filings or sign petitions as another person</li>
+        <li>Don't use Athen to target a person's private life</li>
+      </ul>
+
+      <h3>8. No warranty</h3>
+      <p>Athen is provided as-is. We make no warranty of fitness for any particular purpose, including that Claude's analysis is correct or that any specific outcome will result from a filing.</p>
+
+      <h3>9. Limitation of liability</h3>
+      <p>To the maximum extent permitted by law, total liability is limited to the amount you paid for the app (currently zero).</p>
+
+      <h3>10. Governing law</h3>
+      <p>These terms are governed by the laws of the Commonwealth of Pennsylvania.</p>
+
+      <h3>11. Changes</h3>
+      <p>If we change these terms in a material way, the next app launch will surface a notice.</p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap">
+      <h2>Support</h2>
+      <p>Questions, bugs, feature requests, or just want to say hi?</p>
+      <p>Email: <a href="mailto:chris@logicoutloud.com">chris@logicoutloud.com</a></p>
+      <p>We aim to respond within 48 hours.</p>
+      <h3>Need to delete data?</h3>
+      <p>The fastest way: delete the app — all on-device data is removed. For petition signatures stored on the backend, email us with your install ID (find it in You → About).</p>
+      <h3>Report a safety concern</h3>
+      <p>If you encounter content depicting imminent harm, contact 911 or the <a href="https://988lifeline.org">988 Suicide & Crisis Lifeline</a> directly. Athen is not a crisis response service.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Chris DiMarco · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a> · <a href="mailto:chris@logicoutloud.com">Contact</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

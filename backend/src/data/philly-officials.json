@@ -1,0 +1,94 @@
+{
+  "_comment": "Map of Philadelphia City Council district -> filing target. The 'citywide' entry is used when the jurisdiction is non-district (Library Board, Rate Board, At-Large, etc.). Fill in real names and emails before going live.",
+  "districts": {
+    "1": {
+      "name": "Councilmember District 1",
+      "title": "District Councilmember",
+      "district": "District 1",
+      "email": "district01@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "2": {
+      "name": "Councilmember District 2",
+      "title": "District Councilmember",
+      "district": "District 2",
+      "email": "district02@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "3": {
+      "name": "Councilmember District 3",
+      "title": "District Councilmember",
+      "district": "District 3",
+      "email": "district03@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "4": {
+      "name": "Councilmember District 4",
+      "title": "District Councilmember",
+      "district": "District 4",
+      "email": "district04@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "5": {
+      "name": "Councilmember District 5",
+      "title": "District Councilmember",
+      "district": "District 5",
+      "email": "district05@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "6": {
+      "name": "Councilmember District 6",
+      "title": "District Councilmember",
+      "district": "District 6",
+      "email": "district06@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "7": {
+      "name": "Councilmember District 7",
+      "title": "District Councilmember",
+      "district": "District 7",
+      "email": "district07@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "8": {
+      "name": "Councilmember District 8",
+      "title": "District Councilmember",
+      "district": "District 8",
+      "email": "district08@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "9": {
+      "name": "Councilmember District 9",
+      "title": "District Councilmember",
+      "district": "District 9",
+      "email": "district09@phlcouncil.com",
+      "source": "phila.gov council directory"
+    },
+    "10": {
+      "name": "Councilmember District 10",
+      "title": "District Councilmember",
+      "district": "District 10",
+      "email": "district10@phlcouncil.com",
+      "source": "phila.gov council directory"
+    }
+  },
+  "byJurisdiction": {
+    "Philadelphia City Council": {
+      "useDistrict": true
+    },
+    "Free Library Board": {
+      "name": "Library Board Secretary",
+      "title": "Board Secretary",
+      "district": "Citywide",
+      "email": "boardcomment@freelibrary.example",
+      "source": "freelibrary.org governance page"
+    },
+    "Water Department": {
+      "name": "Rate Board Clerk",
+      "title": "Public Comment Intake",
+      "district": "Citywide",
+      "email": "rateboard@phila.example",
+      "source": "Water, Sewer, and Storm Water Rate Board"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Local JSON data stores — never source-controlled
+data/issues.json
+data/petitions.json
+data/votes.json
+data/contact-form-queue.json
+data/evidence.json
+data/briefs.json
+data/sources.json
+data/officials-cache.json
+
+# Logs
+*.log
+.DS_Store

@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "phila-legistar",
+      "name": "Philadelphia City Council Legistar",
+      "jurisdiction": "Philadelphia City Council",
+      "scope": "local-philly",
+      "stateCode": "PA",
+      "kind": "legistar",
+      "trustTier": "official",
+      "url": "https://phila.legistar.com",
+      "allowedHosts": ["phila.legistar.com", "webapi.legistar.com"],
+      "legistarClient": "phila",
+      "defaultContactTarget": "Council public comment portal",
+      "defaultQueries": ["upcoming agenda", "committee hearing", "ordinance resolution"]
+    },
+    {
+      "id": "phila-water-rate-board",
+      "name": "Philadelphia Water, Sewer and Storm Water Rate Board",
+      "jurisdiction": "Philadelphia Water Department",
+      "scope": "local-philly",
+      "stateCode": "PA",
+      "kind": "official-web",
+      "trustTier": "official",
+      "url": "https://www.phila.gov/departments/water-sewer-storm-water-rate-board/",
+      "allowedHosts": ["phila.gov"],
+      "defaultContactTarget": "Rate Board hearing record",
+      "defaultQueries": ["rate board hearing notice public comment staff memo"]
+    },
+    {
+      "id": "pa-general-assembly",
+      "name": "Pennsylvania General Assembly",
+      "jurisdiction": "Pennsylvania General Assembly",
+      "scope": "state",
+      "stateCode": "PA",
+      "kind": "official-web",
+      "trustTier": "official",
+      "url": "https://www.legis.state.pa.us",
+      "allowedHosts": ["legis.state.pa.us"],
+      "defaultContactTarget": "State legislative office",
+      "defaultQueries": ["Pennsylvania bill upcoming vote hearing fiscal note"]
+    },
+    {
+      "id": "congress",
+      "name": "Congress.gov",
+      "jurisdiction": "U.S. Congress",
+      "scope": "federal",
+      "kind": "official-api",
+      "trustTier": "official",
+      "url": "https://www.congress.gov",
+      "allowedHosts": ["congress.gov", "api.congress.gov"],
+      "defaultContactTarget": "Congressional constituent office",
+      "defaultQueries": ["upcoming vote bill summary committee report"]
+    },
+    {
+      "id": "govinfo",
+      "name": "GovInfo",
+      "jurisdiction": "Federal Government",
+      "scope": "federal",
+      "kind": "official-api",
+      "trustTier": "official",
+      "url": "https://www.govinfo.gov",
+      "allowedHosts": ["govinfo.gov", "api.govinfo.gov"],
+      "defaultContactTarget": "Federal agency public record",
+      "defaultQueries": ["bills federal register congressional record reports"]
+    },
+    {
+      "id": "regulations-gov",
+      "name": "Regulations.gov",
+      "jurisdiction": "Federal Rulemaking",
+      "scope": "federal",
+      "kind": "official-api",
+      "trustTier": "official",
+      "url": "https://www.regulations.gov",
+      "allowedHosts": ["regulations.gov", "api.regulations.gov"],
+      "defaultContactTarget": "Regulations.gov comment docket",
+      "defaultQueries": ["comment deadline proposed rule notice docket"]
+    },
+    {
+      "id": "openstates",
+      "name": "OpenStates",
+      "jurisdiction": "State Legislatures",
+      "scope": "state",
+      "kind": "verified-web",
+      "trustTier": "verified",
+      "url": "https://openstates.org",
+      "allowedHosts": ["openstates.org", "v3.openstates.org"],
+      "defaultContactTarget": "State legislative office",
+      "defaultQueries": ["state bill latest action committee hearing"]
+    },
+    {
+      "id": "socrata",
+      "name": "Socrata Open Data Catalog",
+      "jurisdiction": "Local open-data portals",
+      "scope": "unknown",
+      "kind": "official-api",
+      "trustTier": "verified",
+      "url": "https://dev.socrata.com",
+      "allowedHosts": ["socrata.com", "api.us.socrata.com", "data.cityofnewyork.us", "data.sfgov.org", "data.cityofchicago.org"],
+      "defaultContactTarget": "Local open-data publisher",
+      "defaultQueries": ["open data budget permits service requests"]
+    },
+    {
+      "id": "open311",
+      "name": "Open311 GeoReport",
+      "jurisdiction": "Local service requests",
+      "scope": "unknown",
+      "kind": "official-api",
+      "trustTier": "verified",
+      "url": "https://wiki.open311.org/GeoReport_v2/",
+      "allowedHosts": ["open311.org"],
+      "defaultContactTarget": "Local 311 service desk",
+      "defaultQueries": ["service request categories open311 endpoint"]
+    },
+    {
+      "id": "fcc",
+      "name": "Federal Communications Commission",
+      "jurisdiction": "Federal Communications Commission",
+      "scope": "federal",
+      "kind": "official-web",
+      "trustTier": "official",
+      "url": "https://www.fcc.gov",
+      "allowedHosts": ["fcc.gov"],
+      "defaultContactTarget": "FCC public comment filing system",
+      "defaultQueries": ["public notice comment deadline rulemaking docket"]
+    }
+  ]
+}
